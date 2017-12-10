@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/Expense_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/ic_expense" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/Detail_Expense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="รายละเอียด" />
+
+        <EditText
+            android:id="@+id/Money_Expense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="จำนวนเงิน"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/Save_Expense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="บันทึก" />
+    </LinearLayout>
+
+</RelativeLayout>
